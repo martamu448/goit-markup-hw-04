@@ -156,17 +156,21 @@ body {
  .contacts {
     display: flex;
 }
+/*==================== Вирівнювання іконки/пошти ?????? ===== */
+.contacts .item {
+    min-width: 164px;
+    text-align: justify;
+}
 
 .contacts-icon {
     width: 16px;
     height: 12px;
+    fill: var(--primary-text-color);
 }
 
 .contacts-icon:hover {
 fill: var(--accent-color);
 }
-
-
 
 /* =============================Buttons============================= */
 
@@ -226,6 +230,7 @@ fill: var(--accent-color);
 
     background: rgba(47, 48, 58, 0.4);
     background-image: /*linear-gradient (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), */ url('../images/hero.jpg');
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -377,11 +382,12 @@ display: flex;
     }
 
 /* ==========================================Social links - Team=========================== */
-    .team-social-links {
-        min-width: 206px;
-        min-height: 44px;
-    }
-
+   
+.team-social-links-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .team-social-links-button {
         width: 44px;
@@ -410,12 +416,6 @@ display: flex;
     .team-social-links-button:focus {   
         background-color: var(--accent-color);
         border-radius: 50%;
-    }
-
-    .team-social-links-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
 /* =============================Clients============================= */
@@ -529,26 +529,17 @@ padding: 20px 24px;
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
+    justify-content: flex-start;
+}
 
 .footer .logo {
     display: block;
 
-    /*margin-right: 156px;*/
+    margin-right: 156px;
+    margin-bottom: 30px;
    
     color: var(--primary-white-color);  
 }
-/*
-.footer-container {
-    margin-right: 70px;
-}
-
-.address {
-    margin-right: 70px;
-}*/
 
 .address-link,
 .mail-link,
@@ -585,6 +576,13 @@ color: var(--primary-white-color);
 text-transform: uppercase;
 }
 
+.footer-social-links-icon {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--primary-white-color);
+}
+
 .footer-social-links-button {
     width: 44px;
     height: 44px;
@@ -601,12 +599,7 @@ background: rgba(255, 255, 255, 0.1);
     background-color: var(--accent-color);
 }
 
-.footer-social-links-icon {
-    width: 20px;
-    height: 20px;
 
-    fill: var(--primary-white-color);
-}
 
 
 
