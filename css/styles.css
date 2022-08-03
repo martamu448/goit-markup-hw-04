@@ -453,6 +453,14 @@ fill: var(--accent-color);
 
 /* =============================Portfolio============================= */
 
+.filter-list {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+    column-gap: 8px;
+}
+
 .filter-button {
     width: auto;
     height: 38px;
@@ -466,12 +474,9 @@ fill: var(--accent-color);
    border: 1px var(--border-color);
 }
 
-.filter-list {
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 50px;
-    column-gap: 8px;
+.filter-button:hover,
+.filter-button:focus {
+box-shadow: 0px 4px 4px var(--logo-text-color);
 }
 
 /* =============================Examples============================= */
@@ -489,6 +494,11 @@ fill: var(--accent-color);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+}
+
+.examples-list-item:hover,
+.examples-list-item:focus {
+box-shadow: 0px 4px 4px var(--logo-text-color);
 }
 
 .examples-list .item:nth-child(3n) {
