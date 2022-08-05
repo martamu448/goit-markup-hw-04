@@ -379,10 +379,17 @@ display: flex;
 
 /* ==========================================Social links - Team=========================== */
    
+.team-social-links {
+    margin-top: 20px;
+}
+
 .team-social-links-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .team-social-links-button {
